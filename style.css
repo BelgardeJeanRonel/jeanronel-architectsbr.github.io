@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+
+.header{
+    letter-spacing: 5px;
+    color: black;
+    padding: 20px 0;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background: rgb(246, 243, 243);
+    box-shadow: 0 0px 10px;
+    overflow: hidden;
+}
+
+
+.container-header{
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.header a{
+    color: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.span-br-logo{
+    font-weight: 800;
+}
+
+.header a:hover{
+    background: rgb(188, 180, 180);
+}
+
+.navbar-ul{
+    display: none;
+}
+
+
+.aside{
+    position: relative;
+}
+
+.div-aside{
+    color: rgba(255, 255, 255, 0.911);
+    letter-spacing: 5px;
+    font-size: 2rem;
+    position: absolute;
+    text-align: center;
+    bottom: 50%;
+    left: 50%; 
+    transform: translate(-50%,80%);
+}
+
+.span-BR{
+    background: rgba(0, 0, 0, 0.723);
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 10px 15px;
+    margin-right: 10px;
+    
+}
+
+.span-archi{
+    display: none;
+}
+
+/* ________________________Main style_____________________ */
+
+.container-main{
+    max-width: 1350px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.site h2{
+    font-weight: 300;
+    border-bottom: 1px solid rgb(235, 230, 230);
+    padding: 60px 0 15px;
+}
+
+.section1-main{
+    padding-top: 10px;
+}
+
+.section1-main div{
+    margin:15px 0;
+    position: relative;
+}
+
+.section1-main img{
+    position: relative;
+    z-index: 0;
+}
+
+.span-section1-main{
+    background: black;
+    color: white;
+    padding: 10px 15px;
+    position: absolute;
+    display: block;
+    z-index: 1;
+    top: 0;
+    /* margin-top: 20px; */
+}
+
+p{
+    font-size: 17px;
+    line-height: 1.5em;
+}
+
+.button{
+    display: block;
+    background: rgb(240, 236, 236);
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button:hover{
+    background: rgb(154, 151, 151);
+}
+
+.text-grey{
+    color: gray;
+}
+
+.section2-main img{
+    filter: grayscale(70%);
+}
+
+.input-form{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    font-size: 17px;
+}
+
+.input-submit{
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+}
+
+.input-submit:hover{
+    background: gray;
+    cursor: pointer;
+}
+
+.section3-main{
+    margin-bottom: 40px;
+}
+
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    padding: 50px 0;
+}
+
+@media only screen and (min-width:601px) {
+
+    .header{
+        padding: 0;
+    }
+
+    .nav-logo{
+        transform: translateY(25%);
+    }
+
+    .span-archi{
+        display: block;
+        position: absolute;
+        left: -50px;
+        padding-top: 10px;
+    }
+
+    .nav-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-ul{
+        display: flex;
+    }
+
+    .section1-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .section1-main div{
+        margin:0;
+    }
+    
+    .section2-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media only screen and (min-width:612px){
+
+    .div-aside{
+        display: flex;
+        justify-content: center;
+    }
+
+    .span-BR{
+        transform: translate(-100%);
+    }
+
+    .span-archi{
+        transform: translate(40%);
+    }
+}
+
+@media only screen and (min-width:993px){
+
+    .section1-main{
+       
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+
+    .section2-main{
+       
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        
+    }
+
+
+}
